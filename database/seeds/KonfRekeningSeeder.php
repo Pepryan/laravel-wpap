@@ -11,11 +11,11 @@ class KonfRekeningSeeder extends Seeder
      */
     public function run()
     {
-        $konfig = [
+        $konfigs = [
             'bank' => 'BRI',
             'nama' => 'Febryan Ramadhan',
             'no_rek' => '098098139813'
         ];
-        DB::table('konfig')->insert($konfig);
+        DB::table('konfigs')->insert($konfigs);
     }
 }

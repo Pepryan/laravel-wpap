@@ -1,19 +1,24 @@
-@extends('layout.utama') 
-@section('title','| Lihat Post') 
-@section('konten')
+@extends('admin.home') 
+@section('title','| Lihat Pesanan') 
+@section('breadcumb') Pesanan
+<li>Lihat Pesanan</li>
+@endsection
+ 
+@section('content')
 <div class="columns" style="margin-top:15px;">
     <div class="column is-8">
         <div class="card" style="padding-left:20px;padding-right:20px;padding-bottom:20px;padding-top:20px;">
-            <img src="{{asset('images/' . $post->gambar)}}" />
-            <h1 class="title">{{$post->judul}}</h1>
-            <hr> <strong>Tags : </strong>@foreach($post->tag as $tag)
-            <span class="tag is-primary"> {{$tag->nama}}</span> @endforeach
+            <img src="{{asset('images/' . $pesanan->nm_file)}}" />
+            <h1 class="title">NAMA PEMESAN : {{$pesanan->nama}}</h1>
+            <hr>
+            <h1 class="">TELEPON : {{$pesanan->telp}}</h1>
+            <h1 class="">EMAIL : {{$pesanan->email}}</h1>
             <br><br>
-            <section class="section">{!!$post->isi!!}</section>
+            <h1 class="title">Tanggal Pesan : {{date('j M, Y H:i',strtotime($pesanan->created_at))}}</h1>
         </div>
         <hr>
-        <h1 class="subtitle is-4 has-text-centered"> Komentar <small>({{ $post->komentar()->count() }} total</small>)</h1>
-        <hr>
+        <h1 class="subtitle is-4 has-text-centered"> Jumlah pesanan user ID {{$pesanan->user_id}} <small>({{ $counts }} total</small>)</h1>
+        <hr> {{--
         <div class="columns">
             <div class="column">
                 <table class="table">
@@ -27,7 +32,7 @@
                     </thead>
 
                     <tbody>
-                        @foreach ($post->komentar as $komentar)
+                        @foreach ($pesanan->komentar as $komentar)
                         <tr>
                             <td>{{ $komentar->nama }}</td>
                             <td>{{ $komentar->email }}</td>
@@ -41,36 +46,37 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> --}}
     </div>
     <div class="column is-4">
+        {{--
         <article class="message is-dark">
             <div class="message-body">
                 <div class="">
-                    <label>URL:</label> {{-- "{{url('belajar/'.$post->slug)}}" bisa juga diganti menjadi "{{route('belajar.tunggal',$post->slug)"}}
-                    --}}
-                    <p class="subtitle is-6"><a href="{{url('belajar/'.$post->slug)}}">{{url('belajar/'.$post->slug)}}</a></p>
+                    <label>URL:</label> {{-- "{{url('belajar/'.$pesanan->slug)}}" bisa juga diganti menjadi "{{route('belajar.tunggal',$pesanan->slug)"}}
+
+                    <p class="subtitle is-6"><a href="{{url('belajar/'.$pesanan->slug)}}">{{url('belajar/'.$pesanan->slug)}}</a></p>
                     <label>Kategori :</label>
-                    <p>{{$post->kategori->nama}}</p>
+                    <p>{{$pesanan->kategori->nama}}</p>
                     <label>Dibuat :</label>
-                    <p>{{date('j M, Y H:i',strtotime($post->created_at))}}</p>
+                    <p>{{date('j M, Y H:i',strtotime($pesanan->created_at))}}</p>
                 </div>
                 <div>
                     <div class="">Diperbarui :</div>
-                    <div>{{date('j M, Y H:i',strtotime($post->updated_at))}}</div>
-                </div>
+                    <div>{{date('j M, Y H:i',strtotime($pesanan->updated_at))}}</div>
+                </div> --}}
                 <hr>
                 <center>
                     <div class="columns">
-                        <div class="column is-6">
-                            <input type="button" class="button is-primary is-fullwidth is-outlined" value="Edit" onclick="window.location='{{route('posts.edit', $post->id)}}';"></a>
-                        </div>
-                        <div class="column is-6">
-                            {!!Form::open(['route'=>['posts.destroy',$post->id],'method'=>'DELETE'])!!} {!!Form::submit('Hapus',['class'=>'button is-danger
-                            is-outlined is-fullwidth']) !!} {!!Form::close()!!}
+                        <div class="column is-6 is-offset-3">
+                            <form action="{{ route('pesanan.destroy', $pesanan->id) }}" method="POST">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <input type="submit" value="Hapus" class="button is-danger is-outlined is-fullwidth">
+                            </form>
                         </div>
                     </div>
-                    <div class="column is-12"> <input type="button" class="button is-outlined is-fullwidth is-dark" value="<< Lihat Semua Post" onclick="window.location='{{route('posts.index', $post->id)}}';"></a>
+                    <div class="column is-12"> <input type="button" class="button is-outlined is-fullwidth is-dark" value="<< Lihat Semua Pesanan" onclick="window.location='{{route('pesanan.index', $pesanan->id)}}';"></a>
                     </div>
                 </center>
             </div>

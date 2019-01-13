@@ -2,18 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bulkit - Agency, Startup and SaaS template</title>
-    <link rel="icon" type="image/png" href="{{asset('/images/favicon.png')}}" />
-    <!-- Core css -->
-    <link rel="stylesheet" id="bulma" href="{{asset('/css/bulma.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/core_lemonade.css')}}">
-    <!-- Icons -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/icons.min.css')}}">
-    <!-- Google fonts -->
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
+    @include('includes.head')
 </head>
 
 <body>
@@ -31,7 +20,7 @@
                 <!-- Header -->
                 <div class="hero-heading">
                     <div class="section intro-section has-text-centered">
-                        <a href="{{url('/')}}"><img class="top-logo" src="{{asset('/images/logos/bulkit-logo-lemonade.png')}}" alt="FR-Graphics logo"></a>
+                        <a href="{{url('/')}}">FR GRAPHICS</a>
                         <div id="signup-intro" class="intro-text has-text-centered animated preFadeInLeft fadeInLeft">
                             <div class="intro-title">Daftar Akun</div>
                             <div class="intro-sub">Daftar akun sekarang untuk memesan dan dapatkan diskonnya.</div>

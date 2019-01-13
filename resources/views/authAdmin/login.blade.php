@@ -2,19 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bulkit - Agency, Startup and SaaS template</title>
-    <link rel="icon" type="image/png" href="{{asset('/images/favicon.png')}}" />
-    <!-- Core css -->
-    <link rel="stylesheet" id="bulma" href="{{asset('/css/bulma.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/core_deep-blue.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <!-- Plugins css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/js/ggpopover/ggtooltip.css')}}">
-    <!-- Icons -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/icons.min.css')}}">
+    @include('includes.head')
 </head>
 
 <body>
@@ -32,18 +20,9 @@
                         <div class="container big">
                             <div class="nav-left">
                                 <a class="nav-item" href="{{url('/')}}">
-                                        <img src="{{asset('/images/logos/bulkit-logo-deep-blue.png')}}" alt="">
+                                        FR GRAPHICS
                                     </a>
                                 <!-- Sidebar trigger -->
-                                <a href="landing-v2-features.html" class="nav-item is-tab nav-inner is-not-mobile">
-                                        Features
-                                    </a>
-                                <a href="landing-v2-pricing.html" class="nav-item is-tab nav-inner is-not-mobile">
-                                        Pricing
-                                    </a>
-                                <a href="landing-v2-login.html" class="nav-item is-tab nav-inner is-not-mobile">
-                                        Login
-                                    </a>
                             </div>
                             <!-- Responsive toggle -->
                             <span class="nav-toggle">
@@ -52,21 +31,6 @@
                             <span></span>
                             </span>
                             <div class="nav-right nav-menu">
-
-                                <a href="landing-v2-features.html" class="nav-item is-tab nav-inner is-menu-mobile">
-                                        Features
-                                    </a>
-                                <a href="landing-v2-pricing.html" class="nav-item is-tab nav-inner is-menu-mobile">
-                                        Pricing
-                                    </a>
-                                <a href="landing-v2-login.html" class="nav-item is-tab nav-inner is-menu-mobile">
-                                        Login
-                                    </a>
-                                <span class="nav-item">
-                                        <a id="signup-btn" href="{{ route('register') }}" class="button button-signup btn-outlined is-bold btn-align secondary-btn rounded">
-                                            Register
-                                        </a>
-                                    </span>
                             </div>
                         </div>
                     </nav>
@@ -93,7 +57,7 @@
                                         </span> @endif
                                         <span class="material-highlight"></span>
                                         <span class="bar"></span>
-                                        <label>Username *</label>
+                                        <label>Alamat Email</label>
                                     </div>
                                     <div class="control-material is-secondary {{ $errors->has('password') ? ' has-error' : '' }}">
                                         <input class="material-input" type="password" id="password" name="password" required>                                        @if ($errors->has('password'))
@@ -102,7 +66,7 @@
                                         </span> @endif
                                         <span class="material-highlight"></span>
                                         <span class="bar"></span>
-                                        <label>Password *</label>
+                                        <label>Password</label>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-6 col-md-offset-4">

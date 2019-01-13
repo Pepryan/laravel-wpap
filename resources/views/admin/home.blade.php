@@ -16,7 +16,7 @@
             <!-- Side icon menu -->
             <ul>
                 <li class="main-logo">
-                    <a href="dashboard.html"><img src="{{asset('/images/logos/square-violet.svg')}}" alt=""></a>
+                    <a href="{{url('/')}}"><img src="{{asset('/images/logos/square-violet.svg')}}" alt=""></a>
                 </li>
                 <li class="side-icon is-active" data-child-menu="dashboard-menu">
                     <i class="sl sl-icon-speedometer"></i>
@@ -27,9 +27,10 @@
                 <li class="side-icon" data-child-menu="business-menu">
                     <i class="sl sl-icon-briefcase"></i>
                 </li>
+                {{--
                 <li class="side-icon" data-child-menu="misc-menu">
                     <i class="sl sl-icon-graph"></i>
-                </li>
+                </li> --}}
             </ul>
             <!-- /Side icon menu -->
 
@@ -109,7 +110,6 @@
             <nav class="breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li>Dashboard</li>
                     <li>@yield('breadcumb')</li>
                 </ul>
             </nav>

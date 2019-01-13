@@ -50,7 +50,7 @@ class PesanController extends Controller
         //memvalidasi data
         $this->validate($request, array(
             'nama' => 'required|max:255',
-            'telp' => 'required|integer',
+            'telp' => 'required|max:15',
             'email' => 'required',
             'foto' => 'required|image'
         ));

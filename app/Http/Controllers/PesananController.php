@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pesan;
+use App\Models\User;
 use Session;
 use Image;
 use Storage;
@@ -61,7 +62,9 @@ class PesananController extends Controller
      */
     public function show($id)
     {
-        //
+        $pesanan = Pesan::find($id);
+        $count = Pesan::where("user_id", $pesanan->user_id)->count();
+        return view('admin.pesanan.show')->withPesanan($pesanan)->withCounts($count);
     }
 
     /**
@@ -96,10 +99,10 @@ class PesananController extends Controller
     public function destroy($id)
     {
         $pesan = Pesan::find($id);
-        Storage::delete($upload->nm_file);
+        Storage::delete($pesan->nm_file);
 
         $pesan->delete();
-        Session::flash('success', 'Foto berhasil dihapus');
+        Session::flash('success', 'Pesanan berhasil dihapus');
         return redirect()->route('pesanan.index');
     }
 }

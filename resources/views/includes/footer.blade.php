@@ -2,33 +2,6 @@
 
 <div class="container">
     <div class="columns footer-columns is-flex-mobile">
-        {{--
-        <!-- Column -->
-        <div class="column is-half-mobile">
-            <div class="footer-column">
-                <div class="footer-header">
-                    <h3>Company</h3>
-                </div>
-                <ul class="link-list">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Terms of website use</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Column -->
-        <div class="column is-half-mobile">
-            <div class="footer-column">
-                <div class="footer-header">
-                    <h3>Learning</h3>
-                </div>
-                <ul class="link-list">
-                    <li><a href="#">User guide</a></li>
-                    <li><a href="#">About WPAP</a></li>
-                </ul>
-            </div>
-        </div> --}}
         <!-- Column -->
         <div class="column is-half-mobile">
             <div class="footer-column">

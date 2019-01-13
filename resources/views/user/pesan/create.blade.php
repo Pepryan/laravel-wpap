@@ -84,7 +84,7 @@
                     <div class="column is-10 is-offset-1 is-hidden-mobile">
                         <div class="flex-card fancy-pricing-card streched light-bordered hover-inset secondary">
                             <div>
-                                <h3 class="plan-name">Hai, {{Auth::User()->name}}! Anda sudah memesan sebanyak</h3>
+                                <h3 class="plan-name">Hai, {{Auth::User()->name}} ! Anda sudah memesan sebanyak</h3>
                             </div>
                             <div>
                                 <div class="plan-price">
@@ -323,7 +323,7 @@
     <!-- /Contact form -->
 
     <!-- Footer light -->
-    <footer class="footer footer-light">
+    <footer class="footer footer-dark">
     @include('includes.footer')
     </footer>
     <!-- /Footer light -->

@@ -2,19 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bulkit - Agency, Startup and SaaS template</title>
-    <link rel="icon" type="image/png" href="{{asset('/images/favicon.png')}}" />
-    <!-- Core css -->
-    <link rel="stylesheet" id="bulma" href="{{asset('/css/bulma.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/core_deep-blue.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <!-- Plugins css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/js/ggpopover/ggtooltip.css')}}">
-    <!-- Icons -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/icons.min.css')}}">
+    @include('includes.head')
 </head>
 
 <body>
@@ -31,13 +19,13 @@
                 <div class="hero-heading">
                     <!-- Logo -->
                     <div class="section has-text-centered">
-                        <a href="{{url('/')}}"><img class="top-logo" src="{{asset('/images/logos/bulkit-logo-lemonade.png')}}" alt="Bulkit logo"></a>
+                        <a href="{{url('/')}}">FR GRAPHICS</a>
                     </div>
                     @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
                     </div>
-                @endif
+                    @endif
                 </div>
                 <div class="hero-body">
                     <div class="container">
@@ -51,8 +39,8 @@
                                         <!-- Input -->
                                         <div class="field pb-10">
                                             <div class="control{{ $errors->has('email') ? ' has-error' : '' }}">
-                                                <input class="input is-large is-primary-focus" type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Email" required
-                                                    autofocus>
+                                                <input class="input is-large is-primary-focus" type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Email"
+                                                    required autofocus>
                                             </div>
                                             @if ($errors->has('email'))
                                             <span class="help-block">
@@ -76,7 +64,7 @@
                                     </div>
                                 </form>
                                 <!-- /Login Form -->
-</div>
+                            </div>
                             <div class="column"></div>
                         </div>
                     </div>
@@ -91,13 +79,13 @@
                 <div class="columns has-text-centered">
                     <div class="column">
                         <h2 class="title is-2 light-text">
-                            Start managing now
+                            Belum punya akun ?
                         </h2>
                         <h3 class="subtitle is-5 light-text">
-                            Stop struggling with common tasks and focus on the real choke points. Discover a full featured HR management platform.
+                            Daftar sekarang untuk memesan.
                         </h3>
                         <div class="mt-30 has-text-centered">
-                            <a href="landing-v3-signup.html" class="button button-cta btn-outlined is-bold light-btn rounded">Get started Free</a>
+                            <a href="{{route('register')}}" class="button button-cta btn-outlined is-bold light-btn rounded">Daftar Gratis</a>
                         </div>
                     </div>
                 </div>

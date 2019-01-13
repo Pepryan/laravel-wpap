@@ -111,8 +111,8 @@
                                 <i class="im im-icon-Ticket"></i>
                             </div>
                             <div class="box-title">Dapat Bonus Diskon</div>
-                            <p class="box-content is-tablet-padded">Dapatkan diskon Rp. 10.000 jika sudah memesan WPAP lebih dari 5 kali dan memberikan 5 testimoni
-                                lewat website.</p>
+                            <p class="box-content is-tablet-padded">Dapatkan diskon Rp. 10.000 jika sudah memesan WPAP lebih dari 5 kali lewat website. (Diskon berlaku
+                                1 kali)</p>
                         </div>
                     </div>
                     <!-- Icon block -->
@@ -189,92 +189,100 @@
                 <h2 class="section-title-landing">
                     Mereka <i class="sl sl-icon-heart color-red"></i> FR-Graphics
                 </h2>
-                <h4>Galeri/Portofolio Kami</h4>
+                <h4>Contoh Hasil WPAP Kami. (Klik untuk memperbesar)</h4>
             </div>
             <!-- /Title -->
 
-            <div class="content-wrapper">
-                <div class="columns is-vcentered">
-                    <div class="column is-10 is-offset-1">
-
-                        <!-- Testimonials -->
-                        <div class="flat-testimonials">
-
-                            <!-- Testimonial item -->
-                            <div class="flat-testimonial-item secondary">
-                                <div class="columns is-vcentered">
-                                    <div class="column is-7">
-                                        <div class="image-container">
-                                            <img src="{{asset('/images/photos/testimonials/adam_bradley.jpg')}}" alt="">
-                                            <div class="skewed-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="column is-5">
-                                        <div class="testimonial-text">
-                                            <i class="fa fa-quote-left fa-3x mb-40"></i>
-                                            <p class="quoted-text">Lorem ipsum dolor sit amet, his insolens antiopam cu. Vim integre deserunt elaboraret
-                                                et, qui dicant reprehendunt id, modus dignissim ne sea.</p>
-                                            <p class="client-name is-handwritten">Adam Bradley</p>
-                                            <p class="client-position">Project Manager</p>
-                                            <img class="company" src="{{asset('/images/logos/custom/tribe.svg')}}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+            <!-- Galeri -->
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="grid-clients three-grid">
+                        <div class="columns is-vcentered">
+                            <div class="column"></div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/arip.png')}}"><img class="client" src="{{asset('/images/galeri/arip.png')}}" alt=""></a>
                             </div>
-                            <!-- /Testimonial item -->
-
-                            <!-- Testimonial item -->
-                            <div class="flat-testimonial-item secondary">
-                                <div class="columns is-vcentered">
-                                    <div class="column is-7">
-                                        <div class="image-container">
-                                            <img src="{{asset('/images/photos/testimonials/evelyne_dwyers.jpg')}}" alt="">
-                                            <div class="skewed-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="column is-5">
-                                        <div class="testimonial-text">
-                                            <i class="fa fa-quote-left fa-3x mb-40"></i>
-                                            <p class="quoted-text">Lorem ipsum dolor sit amet, his insolens antiopam cu. Vim integre deserunt elaboraret
-                                                et, qui dicant reprehendunt id, modus dignissim ne sea.</p>
-                                            <p class="client-name is-handwritten">Evelyn Dwyers</p>
-                                            <p class="client-position">Software Engineer</p>
-                                            <img class="company" src="{{asset('/images/logos/custom/covenant.svg')}}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/aji(1).jpg')}}"><img class="client" src="{{asset('/images/galeri/aji(1).jpg')}}" alt=""></a>
                             </div>
-                            <!-- /Testimonial item -->
-
-                            <!-- Testimonial item -->
-                            <div class="flat-testimonial-item secondary">
-                                <div class="columns is-vcentered">
-                                    <div class="column is-7">
-                                        <div class="image-container">
-                                            <img src="{{asset('/images/photos/testimonials/joel_zimmerman.jpg')}}" alt="">
-                                            <div class="skewed-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="column is-5">
-                                        <div class="testimonial-text">
-                                            <i class="fa fa-quote-left fa-3x mb-40"></i>
-                                            <p class="quoted-text">Lorem ipsum dolor sit amet, his insolens antiopam cu. Vim integre deserunt elaboraret
-                                                et, qui dicant reprehendunt id, modus dignissim ne sea.</p>
-                                            <p class="client-name is-handwritten">Joel Zimmerman</p>
-                                            <p class="client-position">Head of Sales</p>
-                                            <img class="company" src="{{asset('/images/logos/custom/gutwork.svg')}}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/febryan.jpg')}}"><img class="client" src="{{asset('/images/galeri/febryan.jpg')}}" alt=""></a>
                             </div>
-                            <!-- /Testimonial item -->
-
+                            <div class="column"></div>
                         </div>
-                        <!-- /Testimonials -->
+                        <div class="columns is-vcentered is-separator">
+                            <div class="column"></div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/lisaaa.jpg')}}"><img class="client" src="{{asset('/images/galeri/lisaaa.jpg')}}" alt=""></a>
+                            </div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/papahh.jpg')}}"><img class="client" src="{{asset('/images/galeri/papahh.jpg')}}" alt=""></a>
+                            </div>
+                            <div class="column">
+                                <a href="{{asset('/images/galeri/sabil1.png')}}"><img class="client" src="{{asset('/images/galeri/sabil1.png')}}" alt=""></a>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+            {{--
+            <!-- Image carousel v3 -->
+            <div class="single-image-carousel">
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/arip.png')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/aji(1).jpg')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/febryan.jpg')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/lisaaa.jpg')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/papahh.jpg')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-wrapper">
+                        <img src="{{asset('/images/galeri/sabil1.png')}}" alt="">
+                        <div class="caption has-text-left">
+                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Image carousel v3 -->--}}
+            <!-- /Galeri -->
         </div>
+
     </section>
     <!-- Testimonials section -->
 
@@ -303,7 +311,7 @@
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
 
-    <footer class="footer footer-light">
+    <footer class="footer footer-dark">
     @include('includes.footer')
     </footer>
     @include('includes.javascript')

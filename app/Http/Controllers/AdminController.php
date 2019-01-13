@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pesan;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -22,10 +24,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
-    }
-    public function konfig()
-    {
-        return view('admin.konfig.edit');
+        $count = Pesan::all()->count();
+        $countuser = User::all()->count();
+        return view('admin.admin')->withCount($count)->withCountuser($countuser);
     }
 }

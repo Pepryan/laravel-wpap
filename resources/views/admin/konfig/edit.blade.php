@@ -34,23 +34,24 @@
         <h3>Edit Rekening</h3>
     </div>
     <div class="card-body">
-        <form class="padding-20">
+        <form action="{{ route('konfig.update') }}" method="POST" class="padding-20">
+            <input type="hidden" name="_method" value="PUT"> {{ csrf_field() }}
             <div class="field">
                 <label class="form-label">Bank</label>
                 <div class="control">
-                    <input type="text" class="input is-medium">
+                    <input type="text" class="input is-medium is-secondary-focus" value="{{$konfig->bank}}">
                 </div>
             </div>
             <div class="field mt-20">
                 <label class="form-label">Nama</label>
                 <div class="control">
-                    <input type="text" class="input is-medium">
+                    <input type="text" class="input is-medium is-secondary-focus" value="{{$konfig->nama}}">
                 </div>
             </div>
             <div class="field mt-20">
                 <label class="form-label">No. Rekening</label>
                 <div class="control">
-                    <input type="email" class="input is-medium is-primary-focus">
+                    <input type="text" class="input is-medium is-secondary-focus" value="{{$konfig->no_rek}}">
                 </div>
             </div>
 

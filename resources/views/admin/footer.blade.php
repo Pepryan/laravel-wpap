@@ -5,6 +5,6 @@
         </div>
     </div>
     <div class="has-text-centered">
-        <span class="more-info-company">Startup and SaaS template</span>
+        <span class="more-info-company">FR-Graphics</span>
     </div>
 </div>
