@@ -10,8 +10,4 @@
 <link rel="stylesheet" type="text/css" href="{{asset('/css/icons.min.css')}}">
 <!-- Plugins css -->
 <link rel="stylesheet" type="text/css" href="{{asset('/js/ggpopover/ggtooltip.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/js/iziToast/iziToast.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/js/datepicker/datepicker.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/js/wickedpicker/wickedpicker.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/js/chosen/chosen.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">

@@ -18,11 +18,4 @@
     </li>
 </ul>
 <!-- /Sidebar menu 3 -->
-{{--
-<!-- Sidebar menu 4 -->
-<ul id="misc-menu" class="sidebar-menu animated preFadeInRIght fadeInRight">
-    <li class=""><a class="parent-link" href=""><span class="material-icons">grid_on</span>User</a>
-    </li>
-</ul>
-<!-- /Sidebar menu 4 -->--}}
 </div>

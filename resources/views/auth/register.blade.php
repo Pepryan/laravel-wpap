@@ -9,8 +9,6 @@
     <!-- Pageloader -->
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
-
-
     <!-- Wrapper -->
     <div class="login-wrapper columns is-gapless">
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Pesan;
 use App\Models\User;
+use App\Models\Konfig;
 use Session;
 use Image;
 use Storage;
@@ -132,6 +133,7 @@ class PesanController extends Controller
     }
     public function konfirmasi()
     {
-        return view('user.konfirmasi.index');
+        $konfig = Konfig::first();
+        return view('user.konfirmasi.index')->withKonfig($konfig);
     }
 }

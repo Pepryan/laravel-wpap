@@ -160,6 +160,7 @@
         </div>
     </section>
     <!-- /Services section -->
+    <br><br><br><br>
     <!-- Slanted feature Section -->
     <section id="business-types" class="section section-primary is-medium is-skewed-sm is-relative">
         <div class="container slanted-container is-reverse-skewed-sm">
@@ -232,59 +233,6 @@
                     </div>
                 </div>
             </div>
-            {{--
-            <!-- Image carousel v3 -->
-            <div class="single-image-carousel">
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/arip.png')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/aji(1).jpg')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/febryan.jpg')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/lisaaa.jpg')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/papahh.jpg')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/images/galeri/sabil1.png')}}" alt="">
-                        <div class="caption has-text-left">
-                            <span>Lorem ipsum dolor sit amet, vim brute malis vocibus ex, te mei magna persius. Duo nibh aliquam deleniti no.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Image carousel v3 -->--}}
             <!-- /Galeri -->
         </div>
 

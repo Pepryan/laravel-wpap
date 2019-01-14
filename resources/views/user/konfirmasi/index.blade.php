@@ -162,19 +162,25 @@
                                 <table class="responsive-table is-primary mb-40">
                                     <tbody>
                                         <tr>
-                                            <th>Bank</th>
-                                            <th>Atas Nama</th>
-                                            <th>No. Rekening</th>
+                                            <th>
+                                                <center>Bank</center>
+                                            </th>
+                                            <th>
+                                                <center>Atas Nama</center>
+                                            </th>
+                                            <th>
+                                                <center>No. Rekening</center>
+                                            </th>
                                         </tr>
                                         <tr>
                                             <td data-th="Bank">
-
+                                                <center>{{$konfig->bank}}</center>
                                             </td>
                                             <td data-th="Atas Nama">
-                                                Michael Hoffman
+                                                <center>{{$konfig->nama}}</center>
                                             </td>
                                             <td data-th="No. Rekening">
-                                                Engineer
+                                                <center>{{$konfig->no_rek}}</center>
                                             </td>
                                         </tr>
                                     </tbody>

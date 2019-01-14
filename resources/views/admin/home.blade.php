@@ -27,18 +27,8 @@
                 <li class="side-icon" data-child-menu="business-menu">
                     <i class="sl sl-icon-briefcase"></i>
                 </li>
-                {{--
-                <li class="side-icon" data-child-menu="misc-menu">
-                    <i class="sl sl-icon-graph"></i>
-                </li> --}}
             </ul>
             <!-- /Side icon menu -->
-
-            <!-- Profile wrapper -->
-            <ul class="profile">
-    @include('admin.profile')
-            </ul>
-            <!-- /Profile wrapper -->
 
         </div>
     </nav>

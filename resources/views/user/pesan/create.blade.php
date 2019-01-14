@@ -27,6 +27,7 @@
                                 <a class="nav-item is-tab nav-inner is-not-mobile" href="#">
                                         Hai, {{Auth::User()->name}}! :)
                                      </a>
+
                             </div>
                             <!-- Responsive toggle -->
                             <span class="nav-toggle">
@@ -36,6 +37,9 @@
                             </span>
                             <div class="nav-right nav-menu">
                                 <span class="nav-item">
+                                        <a class="button button-signup btn-outlined is-bold btn-align light-btn rounded" href="{{url('/konfirmasi')}}">
+                                            Konfirmasi
+                                         </a>
                                         <a id="signup-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();" class="button button-signup btn-outlined is-bold btn-align light-btn rounded">
                                             Log Out
@@ -336,15 +340,14 @@
     <script src="{{asset('/js/core/modernizr.min.js')}}"></script>
     <!-- Plugins js -->
     <script src="{{asset('/js/ggpopover/ggtooltip.js')}}"></script>
+
     <script src="{{asset('/js/embed/embed.js')}}"></script>
     <script src="{{asset('/js/scrollreveal/scrollreveal.min.js')}}"></script>
     <script src="{{asset('/js/scrollspy/scrollspy.min.js')}}"></script>
     <script src="{{asset('/js/waypoints/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('/js/waypoints/sticky.min.js')}}"></script>
-    <script src="{{asset('/js/vivus/vivus.min.js')}}"></script>
+
     <script src="{{asset('/js/ggpopover/ggtooltip.js')}}"></script>
-    <script src="{{asset('/js/highlightjs/highlight.pack.js')}}"></script>
-    <!-- Bulkit js -->
+
     <script src="{{asset('/js/main.js')}}"></script>
     <!-- Page specific js -->
     <script src="{{asset('/js/pages/landingv2.js')}}"></script>
@@ -355,100 +358,3 @@
 </body>
 
 </html>
-{{-- 
-@extends('user.home') 
-@section('title','| Upload Foto') 
-@section('breadcumb')
-<li>Upload Foto</li>
-@endsection
- 
-@section('content') @if(Session::has('success'))
-<article class="message is-success" style="margin-top:20px;">
-    <div class="message-header">
-        <p>Berhasil!</p>
-    </div>
-    <div class="message-body">
-        {{Session::get('success')}}
-    </div>
-</article>
-@endif @if(count($errors) > 0)
-<article class="message is-danger" style="margin-top:20px;">
-    <div class="message-header">
-        <p>Error!</p>
-    </div>
-    <div class="message-body">
-        @foreach($errors->all() as $error)
-        <ul>
-            <li>
-                {{$error}}
-            </li>
-        </ul>
-        @endforeach
-    </div>
-</article>
-@endif
-<!-- Horizontal forms -->
-<section class="section section-feature-grey is-medium">
-    <div class="section-title-wrapper has-text-centered">
-        <div class="bg-number"></div>
-        <h2 class="title section-title has-text-centered dark-text text-bold">
-            Pesan WPAP
-        </h2>
-    </div>
-    <br>
-    <!-- 2 columns -->
-    <div class="columns is-vcentered">
-        <div class="column is-6 is-offset-3">
-            <div class="flex-card light-bordered light-raised">
-                <div class="card-body">
-                    <h2 class="title is-4 text-bold mb-20">Upload Foto</h2>
-                    <form action="{{ route('pesan.store') }}" method="POST" role="form" enctype="multipart/form-data"> {{csrf_field()}}
-                        <div class="columns mt-50">
-                            <div class="column">
-                                <div class="control">
-                                    <label>Nama</label>
-                                    <input class="input is-secondary-focus is-large mt-5" type="text" name="nama" id="nama">
-                                </div>
-                                <div class="control">
-                                    <label>Telepon</label>
-                                    <input class="input is-secondary-focus is-small mt-5" type="text" value="+62" disabled>
-                                    <input class="input is-secondary-focus is-large mt-5" type="text" name="telp" id="telp">
-
-                                </div>
-
-                            </div>
-                            <div class="column">
-                                <div class="control">
-                                    <label>Email</label>
-                                    <input class="input is-secondary-focus is-large mt-5" type="email" name="email" id="email">
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="columns">
-                            <div class="column">
-                                <div class="control">
-                                    <label for="pesan" class="label">Upload Gambar</label>
-                                    <div class="file" name="foto">
-                                        <label class="file-label">
-                                        <span class="file-cta">
-                                            <span class="file-icon">
-                                            <i class="fa fa-upload"></i>
-                                            </span>
-                                        </span> &nbsp;
-                                        <input class="file-input" type="file" name="foto">
-                                    </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-30">
-                                <button class="button btn-align no-lh raised primary-btn">Create</button>
-                            </div>
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 2 columns -->
-@endsection
- --}}

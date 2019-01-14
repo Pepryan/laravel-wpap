@@ -30,10 +30,6 @@
                 <div class="card-stat primary has-text-right">{{$countuser}}<span class="stat-type">User</span></div>
             </div>
         </div>
-        {{--
-        <div class="more">
-            <a class="primary" href="#">Open</a>
-        </div> --}}
     </div>
 </div>
 </div>

@@ -37,7 +37,7 @@ Route::post('/user/logout', 'Auth\LoginController@userLogout')->name('user.logou
 Route::prefix('admin')->group(function () {
     Route::get('/', 'AdminController@index')->name('admin.home');
     Route::get('/konfig', 'KonfigController@edit')->name('konfig');
-    Route::post('/konfig', 'KonfigConroller@update')->name('konfig.update');
+    Route::put('/konfig', 'KonfigController@update')->name('konfig.update');
     // Route::resource('/galeri', 'GaleriController');
     Route::resource('/pesanan', 'PesananController');
     Route::get('/login', 'AuthAdmin\LoginController@showLoginForm')->name('admin.login');
