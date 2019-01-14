@@ -25,7 +25,12 @@
                                        FR GRAPHICS
                                     </a>
                             </div>
-
+                            <!-- Responsive toggle -->
+                            <span class="nav-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </span>
                             <div class="nav-right nav-menu">
                                 <a class="nav-item is-tab nav-inner is-menu-mobile" href="{{url('/')}}">
                                             FR GRAPHICS
